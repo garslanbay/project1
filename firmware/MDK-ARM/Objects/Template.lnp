@@ -1,0 +1,22 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\startup_stm32f030.o"
+".\objects\system_stm32f0xx.o"
+".\objects\stm32f0xx_gpio.o"
+".\objects\stm32f0xx_rcc.o"
+".\objects\stm32f0xx_it.o"
+".\objects\stm32f0xx_adc.o"
+".\objects\stm32f0xx_dma.o"
+".\objects\stm32f0xx_misc.o"
+".\objects\stm32f0xx_i2c.o"
+".\objects\si7021.o"
+".\objects\stm32f0xx_spi.o"
+".\objects\24l01.o"
+".\objects\delay.o"
+".\objects\spi.o"
+".\objects\stm32f0xx_exti.o"
+".\objects\stm32f0xx_syscfg.o"
+--strict --scatter ".\Objects\Template.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Template.map" -o .\Objects\Template.axf
